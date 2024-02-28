@@ -12,11 +12,11 @@ window.addEventListener("load", function () {
 
     var idade = prompt("Digite a idade a ser comparada: ");
 
-    document.write(`<p>Todas as idades maiores do que ${idade}? ${compareAge(vetAges, idade)}</p>`);
+    document.write(`<p>Todas as idades maiores ou iguais a ${idade}? ${compareAge(vetAges, idade)}</p>`);
 
-    document.write(`<p>Idades maiores do que ${idade}: ${compareListAge(vetAges, idade)}</p>`);
+    document.write(`<p>Idades maiores ou iguais a ${idade}: ${compareListAge(vetAges, idade)}</p>`);
 
-    document.write(`<p>A média das idades maiores do que ${idade} é ${avgListAge(vetAges, idade).toFixed(2)}</p>`);
+    document.write(`<p>A média das idades maiores ou iguais a ${idade} é ${avgListAge(vetAges, idade).toFixed(2)}</p>`);
 });
 
 sumAges = (vet) => {
